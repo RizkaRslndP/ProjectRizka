@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
      @vite('resources/css/app.css')
+     @extends('app')
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Halaman Home</title>
 </head>
 <body>
-    <a href="/Nav">Nav</a>
+
     <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script>
     <div class="flex min-h-full flex-col justify-center px-6 py-12 lg:px-8">
   <div class="sm:mx-auto sm:w-full sm:max-w-sm">

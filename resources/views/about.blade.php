@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
      @vite('resources/css/app.css')
+     @extends('app')
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Halaman About</title>
 </head>
 <body>
-    <x-navbar />
     <h1>Halaman ABoout</h1>
     <h3>{{ $nama }}</h3>
 
