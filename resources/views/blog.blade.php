@@ -8,10 +8,7 @@
     <title>Halaman Blog</title>
 </head>
 <body>
-    <a href="/">Home</a> |
-    <a href="/about">About</a> |
-    <a href="/blog">Blog</a> |
-    <a href="/contact">Contact</a>
+    <x-navbar />
     <h1>Halaman Blog</h1>
     <article>
         <h2>Judul Artikel Pertama</h2>
