@@ -12,7 +12,7 @@
     @include('nav')
 
     {{-- Halaman Konten --}}
-    <main class="py-6 px-4">
+    <main class="flex-1 py-6 px-4">
         @yield('content')
     </main>
 
