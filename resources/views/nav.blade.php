@@ -26,7 +26,7 @@
         </button>
       </div>
       <div class="hidden lg:flex lg:gap-x-12">
-        <a href="/dashboard" class="text-sm/6 font-semibold text-white">Product</a>
+        <a href="/dashboard" class="text-sm/6 font-semibold text-white">Dashboard</a>
         <a href="/blog" class="text-sm/6 font-semibold text-white">Blog</a>
         <a href="/contact" class="text-sm/6 font-semibold text-white">Contact</a>
         <a href="/about" class="text-sm/6 font-semibold text-white">About</a>
