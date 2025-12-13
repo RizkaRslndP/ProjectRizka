@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
      @vite('resources/css/app.css')
-     @extends('app')
+     @include('nav')
+     @extends('footer')
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Halaman Blog</title>
 </head>
@@ -18,5 +19,6 @@
         <h2>Judul Artikel Kedua</h2>
         <p>Ini adalah isi dari artikel kedua di halaman blog.</p>
     </article>
+ 
 </body>
 </html>

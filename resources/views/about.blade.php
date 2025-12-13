@@ -4,14 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
      @vite('resources/css/app.css')
-     @extends('app')
+     @include('nav')
+     @extends('footer')
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Halaman About</title>
+    <title>About</title>
 </head>
 <body>
-    <h1>Halaman ABoout</h1>
-    <h3>{{ $nama }}</h3>
-
     <div class="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32">
   <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&crop=focalpoint&fp-y=.8&w=2830&h=1500&q=80&blend=111827&sat=-100&exp=15&blend-mode=multiply" alt="" class="absolute inset-0 -z-10 size-full object-cover object-right md:object-center" />
   <div aria-hidden="true" class="hidden sm:absolute sm:-top-10 sm:right-1/2 sm:-z-10 sm:mr-10 sm:block sm:transform-gpu sm:blur-3xl">
@@ -53,6 +51,5 @@
     </div>
   </div>
 </div>
-
 </body>
 </html>
