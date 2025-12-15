@@ -9,7 +9,8 @@
 </head>
 
 <body>
-    <div x-data="{ sidebarOpen: false }" class="flex h-screen overflow-hidden"> <!-- SIDEBAR -->
+    <div x-data="{ sidebarOpen: false }" class="flex h-screen overflow-hidden"> 
+        <!-- SIDEBAR -->
         <aside :class="sidebarOpen ? 'translate-x-0' : '-translate-x-full'"
             class="fixed z-40 w-64 h-full bg-white border-gray-200 px-6 border-r transition-transform lg:translate-x-0 lg:static">
             <div class="h-16 px-6 py-4 border-b border-gray-200 flex items-center"> <img
@@ -23,12 +24,14 @@
                     class="block text-gray-700 hover:text-indigo-600">Mapping Factors</a> <a
                     class="block text-gray-700 hover:text-indigo-600">Overcoming Paralysis</a>
             </nav>
-        </aside> <!-- CONTENT -->
+        </aside> 
+        <!-- CONTENT -->
         <div class="flex flex-col flex-1 overflow-hidden"> <!-- TOPBAR -->
             <header class="h-16 bg-white border-b border-gray-200 flex items-center px-6"> <button
                     @click="sidebarOpen = !sidebarOpen" class="lg:hidden"> ☰ </button>
                 <div class="absolute right-4 flex items-center gap-4"> <span class="text-sm text-gray-500">Compass /
-                        Overview</span> <!-- PROFILE -->
+                        Overview</span> 
+                        <!-- PROFILE -->
                     <div x-data="{ open: false }" class="relative"> <img @click="open = !open"
                             src="{{ Vite::asset('resources/assets/profil.png') }}"
                             class="h-8 w-8 rounded-full cursor-pointer "> <!-- DROPDOWN -->
@@ -36,7 +39,7 @@
                             class="absolute right-0 mt-2 w-40 bg-white rounded shadow"> <a href="/edit-profil"
                                 class="block px-4 py-2 text-sm hover:bg-gray-100">Profile</a>
                             <form method="POST" action="/login"> @csrf <a href="/login"
-                                    class="w-full text-left px-4 py-2 text-sm hover:bg-gray-100"> Logout</a> </button>
+                                    class="block px-4 py-2 text-sm hover:bg-gray-100"> Logout</a> </button>
                             </form>
                         </div>
                     </div>
