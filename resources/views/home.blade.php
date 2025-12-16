@@ -8,12 +8,12 @@
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script>
     @vite('resources/css/app.css')
-    <title>About</title>
+    <title>Home Page</title>
 </head>
 
 <body class ="h-full">
     <div class="min-h-full">
-  <nav class="relative bg-gray-800/50 after:pointer-events-none after:absolute after:inset-x-0 after:bottom-0 after:h-px after:bg-white/10">
+  <nav class="relative bg-gray-800 after:pointer-events-none after:absolute after:inset-x-0 after:bottom-0 after:h-px after:bg-white/10">
   <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
     <div class="relative flex h-16 items-center justify-between">
       <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -76,13 +76,13 @@
 
   <header class="relative bg-white shadow-sm">
     <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
-      <h1 class="text-3xl font-bold tracking-tight text-gray-900">About</h1>
+      <h1 class="text-3xl font-bold tracking-tight text-gray-900">Home Page</h1>
     </div>
   </header>
   <main>
     <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
       <!-- Your content -->
-      <p>Welcome to the About Page!</p>
+      <p>Welcome to the Home Page!</p>
     </div>
   </main>
 </div>
