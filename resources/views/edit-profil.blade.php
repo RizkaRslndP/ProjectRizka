@@ -8,13 +8,11 @@
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script>
     @vite('resources/css/app.css')
-    @include('navbar')
     <title>Document</title>
 </head>
 
 <body>
     <div class="max-w-5xl mx-auto px-6 py-10">
-
         <!-- Header -->
         <div class="mb-8">
             <h1 class="text-2xl font-semibold text-gray-900">Edit Profil</h1>

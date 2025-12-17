@@ -1,4 +1,25 @@
-@props(['active' => false])
+@props([
+    'active' => false,
+    'mobile' => false,
+])
 
-<a {{ $attributes }} aria-current="{{ $active ? 'page' : false }}"
-    class="{{ $active ? 'bg-gray-950/50 text-white' : 'text-gray-300 hover:bg-white/5 hover:text-white' }} rounded-md px-3 py-2 text-sm font-medium">{{ $slot }}</a>
+@php
+    $base = 'font-medium rounded-md transition';
+
+    $desktop = 'px-3 py-2 text-sm';
+    $mobileClass = 'block px-3 py-2 text-base';
+
+    $activeClass = 'bg-gray-950/50 text-white';
+    $inactiveClass = 'text-gray-300 hover:bg-white/5 hover:text-white';
+
+    $classes = implode(' ', [$base, $mobile ? $mobileClass : $desktop, $active ? $activeClass : $inactiveClass]);
+@endphp
+
+<a {{ $attributes->merge(['class' => $classes]) }} aria-current="{{ $active ? 'page' : false }}">
+    {{ $slot }}
+</a>
+
+
+<!-- block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-white/5 hover:text-white -->
+
+<!-- Current: "bg-gray-950/50 text-white", Default: "text-gray-300 hover:bg-white/5 hover:text-white" -->

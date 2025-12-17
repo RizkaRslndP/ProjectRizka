@@ -14,8 +14,8 @@ Route::get('/about', function () {
     return view('about', ['title' => 'About Us']);
 });
 
-Route::get('/blog', function () {
-    return view('blog', ['title' => 'Blog', 'posts' => [
+Route::get('/posts', function () {
+    return view('posts', ['title' => 'Blog', 'posts' => [
         [
             'title' => 'Judul Artikel 1',
             'author' => 'Rizka Rosalinda Pratiwi',

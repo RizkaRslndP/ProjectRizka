@@ -64,12 +64,22 @@
      </div>
 
      <el-disclosure id="mobile-menu" hidden class="block sm:hidden">
-         <div class="block space-y-1 px-2 pt-2 pb-3">
-             <!-- Current: "bg-gray-950/50 text-white", Default: "text-gray-300 hover:bg-white/5 hover:text-white" -->
-             <x-nav-link href="/" :active="request()->is('/')">Home</x-nav-link>
-             <x-nav-link href="/posts" :active="request()->is('posts')">Blog</x-nav-link>
-             <x-nav-link href="/about" :active="request()->is('about')">About</x-nav-link>
-             <x-nav-link href="/contact" :active="request()->is('contact')">Contact</x-nav-link>
+         <div class="space-y-1 px-2 pt-2 pb-3">
+             <x-nav-link href="/" :active="request()->is('/')" mobile>
+                 Home Page
+             </x-nav-link>
+
+             <x-nav-link href="/posts" :active="request()->is('posts')" mobile>
+                 Blog
+             </x-nav-link>
+
+             <x-nav-link href="/about" :active="request()->is('about')" mobile>
+                 About
+             </x-nav-link>
+
+             <x-nav-link href="/contact" :active="request()->is('contact')" mobile>
+                 Contact
+             </x-nav-link>
          </div>
      </el-disclosure>
  </nav>
