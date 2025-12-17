@@ -68,15 +68,12 @@
              <x-nav-link href="/" :active="request()->is('/')" mobile>
                  Home Page
              </x-nav-link>
-
              <x-nav-link href="/posts" :active="request()->is('posts')" mobile>
                  Blog
              </x-nav-link>
-
              <x-nav-link href="/about" :active="request()->is('about')" mobile>
                  About
              </x-nav-link>
-
              <x-nav-link href="/contact" :active="request()->is('contact')" mobile>
                  Contact
              </x-nav-link>

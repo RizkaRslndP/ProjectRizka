@@ -6,7 +6,7 @@
         </h2>
         <div class="text-base text-gray-500"><a href="#">{{ $post['author'] }}</a> | {{ $post['date'] }}
         </div>
-        <p class="my-4 font-light">{{ $post['content'] }}
+        <p class="my-4 font-light">{{ $post['body'] }}
         </p>
         <a href="/posts" class="font-medium text-blue-500 hover:underline">&laquo; Back to Posts
         </a>
