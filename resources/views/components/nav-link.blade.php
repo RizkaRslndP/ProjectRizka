@@ -18,8 +18,3 @@
 <a {{ $attributes->merge(['class' => $classes]) }} aria-current="{{ $active ? 'page' : false }}">
     {{ $slot }}
 </a>
-
-
-<!-- block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-white/5 hover:text-white -->
-
-<!-- Current: "bg-gray-950/50 text-white", Default: "text-gray-300 hover:bg-white/5 hover:text-white" -->
