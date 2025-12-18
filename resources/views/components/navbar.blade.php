@@ -1,5 +1,5 @@
  <nav
-     class="relative bg-gray-800 after:pointer-events-none after:absolute after:inset-x-0 after:bottom-0 after:h-px after:bg-white/10">
+     class="sticky top-0 z-50 bg-gray-800 after:pointer-events-none after:absolute after:inset-x-0 after:bottom-0 after:h-px after:bg-white/10">
      <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
          <div class="relative flex h-16 items-center justify-between">
              <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -47,7 +47,7 @@
                              class="size-8 rounded-full bg-gray-800 outline -outline-offset-1 outline-white/10" />
                      </button>
 
-                     <el-menu anchor="bottom end" popover
+                     <el-menu anchor="bottom end" modal="false" trap-focus
                          class="w-48 origin-top-right rounded-md bg-gray-800 py-1 outline -outline-offset-1 outline-white/10 transition transition-discrete [--anchor-gap:--spacing(2)] data-closed:scale-95 data-closed:transform data-closed:opacity-0 data-enter:duration-100 data-enter:ease-out data-leave:duration-75 data-leave:ease-in">
                          <a href="/edit-profil"
                              class="block px-4 py-2 text-sm text-gray-300 focus:bg-white/5 focus:outline-hidden">Your
