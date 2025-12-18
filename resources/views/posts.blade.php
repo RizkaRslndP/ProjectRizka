@@ -11,7 +11,9 @@
                 By
                 <a href="/authors/{{ $post->author->username }}"
                     class="hover:underline text-base text-gray-500">{{ $post->author->name }}</a>
-                |
+                in
+                <a href="/categories/{{ $post->category->slug }}"
+                    class="hover:underline text-base text-gray-500">{{ $post->category->name }}</a> |
                 {{ $post['created_at']->format('j F Y') }}
             </div> <!-- diffForHumans() -->
             <p class="my-4 font-light">{{ Str::limit($post['body'], 150) }}
