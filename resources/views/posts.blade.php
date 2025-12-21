@@ -2,7 +2,7 @@
     <x-slot:title>{{ $title }}</x-slot:title>
 
     @foreach ($posts as $post)
-        {{-- <article class="py-8 mx-w-screen-md border-b border-gray-300">
+        <article class="py-8 mx-w-screen-md border-b border-gray-300">
             <a href="/posts/{{ $post['slug'] }}" class="hover:underline">
                 <h2 class="mb-1 text-3xl tracking-tight font-bold text-gray-900">{{ $post['title'] }}
                 </h2>
@@ -20,9 +20,9 @@
             </p>
             <a href="/posts/{{ $post['slug'] }}" class="font-medium text-blue-500 hover:underline">Read more &raquo;
             </a>
-        </article> --}}
+        </article>
 
-        <article class="py-8 mx-w-screen-md border-b border-gray-300">
+        {{-- <article class="py-8 mx-w-screen-md border-b border-gray-300">
             <a href="#"
                 class="flex flex-col items-center bg-neutral-primary-soft p-6 border border-default rounded-base shadow-xs md:flex-row md:max-w-xl md:flex-row md:max-w-xl">
                 <img class="object-cover w-full rounded-base h-64 md:h-auto md:w-48 mb-4 md:mb-0"
@@ -48,6 +48,6 @@
                     </div>
                 </div>
             </a>
-        </article>
+        </article> --}}
     @endforeach
 </x-layout>

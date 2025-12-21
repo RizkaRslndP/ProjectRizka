@@ -1,17 +1,5 @@
-<!DOCTYPE html>
-<html lang="en" class="h-full bg-gray-100">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script>
-    @vite('resources/css/app.css')
-    <title>Document</title>
-</head>
-
-<body>
+<x-layout>
+    <x-slot:title>Profil</x-slot:title>
     <div class="max-w-5xl mx-auto px-6 py-10">
         <!-- Header -->
         <div class="mb-8">
@@ -156,6 +144,4 @@
             </div>
         </div>
     </div>
-</body>
-
-</html>
+</x-layout>
