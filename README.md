@@ -1,9 +1,8 @@
 #  Campus library test repository project
 **Laravel 12 · SQLite (for now) · Multi-Role Workflow**
 
-![Laravel](https://img.shields.io/badge/Laravel-10.x-FF2D20?style=for-the-badge&logo=laravel)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-15-4169E1?style=for-the-badge&logo=postgresql)
-![PHP](https://img.shields.io/badge/PHP-8.1+-777BB4?style=for-the-badge&logo=php)
+![Laravel](https://img.shields.io/badge/Laravel-12.x-FF2D20?style=for-the-badge&logo=laravel)
+![PHP](https://img.shields.io/badge/PHP-8.4+-777BB4?style=for-the-badge&logo=php)
 
 A simple campus library repository system built using **Laravel** and **SQLite**, **featuring role-based access control** for **managing digital library** collections efficiently.
 
