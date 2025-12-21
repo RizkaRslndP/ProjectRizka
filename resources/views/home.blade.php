@@ -1,6 +1,6 @@
-<x-layout>
+<x-layout-home>
     <x-slot:title>{{ $title }}</x-slot:title>
-    <div class=" bg-white py-24 sm:py-32">
+    <div class="flex bg-white py-24 sm:py-32">
         <div class="mx-auto max-w-7xl px-6 lg:px-8">
             <div class="mx-auto max-w-2xl lg:mx-0">
                 <h2 class="text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl">From the blog
@@ -123,5 +123,4 @@
             </dl>
         </div>
     </div>
-    <x-footer></x-footer>
-</x-layout>
+</x-layout-home>

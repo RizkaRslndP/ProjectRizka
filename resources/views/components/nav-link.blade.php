@@ -6,11 +6,11 @@
 @php
     $base = 'font-medium rounded-md transition';
 
-    $desktop = 'px-3 py-2 text-sm';
+    $desktop = 'px-3 py-2 text-4';
     $mobileClass = 'block px-3 py-2 text-base';
 
-    $activeClass = 'bg-gray-950/50 text-white';
-    $inactiveClass = 'text-gray-300 hover:bg-white/5 hover:text-white';
+    $activeClass = 'bg-white/25 text-white';
+    $inactiveClass = 'text-white hover:bg-white/25 hover:text-white';
 
     $classes = implode(' ', [$base, $mobile ? $mobileClass : $desktop, $active ? $activeClass : $inactiveClass]);
 @endphp

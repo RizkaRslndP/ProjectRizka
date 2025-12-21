@@ -45,56 +45,76 @@
             </div> --}}
 
             <!-- Login -->
-            <div class="flex min-h-full flex-col justify-center px-6 py-12 lg:px-8">
-                <div class="sm:mx-auto sm:w-full sm:max-w-sm">
-                    <img src="{{ Vite::asset('resources/assets/Logo-IAI-AL-AZIS.png') }}" alt="IAI AL-AZIZ"
-                        class="mx-auto h-20 w-auto" />
-                    <h2 class="mt-10 text-center text-2xl/9 font-bold tracking-tight text-gray-900">Sign in to your
-                        account
-                    </h2>
-                </div>
+            <div class="min-h-screen flex items-center justify-center bg-white px-4">
 
-                <div class="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
-                    <form action="#" method="POST" class="space-y-6">
-                        <div>
-                            <label for="email" class="block text-sm/6 font-medium text-black-100">Email
-                                address</label>
-                            <div class="mt-2">
-                                <input id="email" type="email" name="email" required autocomplete="email"
-                                    class="block w-full rounded-md bg-white/5 px-3 py-1.5 text-base text-gray-700 outline-1 -outline-offset-1 outline-white/10 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-500 sm:text-sm/6" />
-                            </div>
+                <!-- Login Card -->
+                <div
+                    class="w-full max-w-md rounded-2xl
+                border border-gray-200
+                shadow-lg
+                bg-[linear-gradient(45deg,#8ec5fc_0%,#8dd3ff_25%,#a1d8ff_50%,#c1d2ff_75%,#e0c3ff_100%)]
+                p-1">
+
+                    <!-- Inner white box -->
+                    <div class="rounded-2xl bg-white px-20 py-28 shadow-sm">
+
+                        <!-- Logo -->
+                        <div class="text-center">
+                            <img src="{{ asset('assets/img/iai_alaziz.png') }}" alt="IAI AL-AZIZ"
+                                class="mx-auto h-40 w-auto" />
+
+                            <h2 class="mt-6 text-2xl font-bold tracking-tight text-gray-800">
+                                Sign in to your account
+                            </h2>
                         </div>
 
-                        <div>
-                            <div class="flex items-center justify-between">
-                                <label for="password"
-                                    class="block text-sm/6 font-medium text-black-100">Password</label>
-                                <div class="text-sm">
-                                    <a href="#" class="font-semibold text-indigo-400 hover:text-indigo-300">Forgot
-                                        password?</a>
+                        <!-- FORM (punyamu tetap) -->
+                        <form action="#" method="POST" class="mt-8 space-y-6">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700">
+                                    Email address
+                                </label>
+                                <input type="email" name="email" required
+                                    class="mt-2 block w-full rounded-md
+                                  border border-gray-300
+                                  px-3 py-2 text-sm
+                                  focus:border-indigo-500 focus:ring-indigo-500">
+                            </div>
+
+                            <div>
+                                <div class="flex items-center justify-between">
+                                    <label class="block text-sm font-medium text-gray-700">
+                                        Password
+                                    </label>
+                                    <a href="#" class="text-sm text-indigo-500 hover:underline">
+                                        Forgot password?
+                                    </a>
                                 </div>
+                                <input type="password" name="password" required
+                                    class="mt-2 block w-full rounded-md
+                                  border border-gray-300
+                                  px-3 py-2 text-sm
+                                  focus:border-indigo-500 focus:ring-indigo-500">
                             </div>
-                            <div class="mt-2">
-                                <input id="password" type="password" name="password" required
-                                    autocomplete="current-password"
-                                    class="block w-full rounded-md bg-white/5 px-3 py-1.5 text-base text-gray-700 outline-1 -outline-offset-1 outline-white/10 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-500 sm:text-sm/6" />
-                            </div>
-                        </div>
 
-                        <div>
                             <button type="submit"
-                                class="flex w-full justify-center rounded-md bg-indigo-500 px-3 py-1.5 text-sm/6 font-semibold text-white hover:bg-indigo-400 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500">Sign
-                                in</button>
-                        </div>
-                    </form>
+                                class="w-full rounded-md
+                           bg-indigo-600 py-2
+                           text-sm font-semibold text-white
+                           hover:bg-indigo-500 transition">
+                                Sign in
+                            </button>
+                        </form>
 
-                    <p class="mt-10 text-center text-sm/6 text-gray-400">
-                        Not a member?
-                        <a href="#" class="font-semibold text-indigo-400 hover:text-indigo-300">Start a 14 day
-                            free trial</a>
-                    </p>
+                        <p class="mt-6 text-center text-sm text-gray-500">
+                            Not a member?
+                            <span class="font-semibold text-indigo-600">Call the admin</span>
+                        </p>
+
+                    </div>
                 </div>
             </div>
+
         </div>
     </div>
 </body>

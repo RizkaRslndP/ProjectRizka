@@ -14,7 +14,7 @@
             <!-- LEFT: FOTO PROFIL -->
             <div class="bg-white border border-gray-200 rounded-2xl p-6">
                 <div class="flex flex-col items-center text-center">
-                    <img src="{{ Vite::asset('resources/assets/profil.png') }}"
+                    <img src="{{ asset('assets/img/profil.png') }}"
                         class="h-32 w-32 rounded-full border border-gray-200 object-cover" alt="Foto Profil" />
 
                     <h3 class="mt-4 font-medium text-gray-900">Foto Profil</h3>
