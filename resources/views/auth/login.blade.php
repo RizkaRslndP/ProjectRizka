@@ -47,10 +47,11 @@
                     Sistem repositori digital akademik modern
                     berbasis teknologi web terkini.
                 </p>
+                <div class="mt-6 text-xs sm:text-sm text-gray-500">
+                    © {{ date('Y') }} Repository IAI AL-AZIZ
+                </div>
             </div>
         </div>
-
-
 
         <!-- LOGIN -->
         <div
@@ -118,7 +119,5 @@
     </div>
 
 </div>
-
-
 
 </html>
