@@ -5,6 +5,7 @@ use App\Models\User;
 use App\Models\Category;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AuthController;
 
 Route::get('/posts', function () {
     // $posts = Post::with(['author', 'category'])->latest()->get();
@@ -32,9 +33,20 @@ Route::get('/categories/{category:slug}', function (Category $category) {
     return view('posts', ['title' =>  ' Articles in: ' . $category->name, 'posts' => $category->posts]);
 });
 
-Route::get('/login', function () {
-    return view('login', ['title' => 'Login Page']);
+Route::get('login', function () {
+    return view('auth.login', ['title' => 'Login']);
 });
+Route::get('/login', [AuthController::class, 'loginForm'])->name('login');
+Route::post('/login', [AuthController::class, 'login']);
+
+Route::get('/register', [AuthController::class, 'registerForm']);
+Route::post('/register', [AuthController::class, 'register']);
+
+Route::post('/logout', [AuthController::class, 'logout'])->middleware('auth');
+
+Route::get('/dashboard', function () {
+    return view('dashboard.index');
+})->middleware('auth');
 
 Route::get('/', function () {
     return view('home', ['title' => 'Home Page']);
@@ -50,4 +62,35 @@ Route::get('/contact', function () {
 
 Route::get('/edit-profil', function () {
     return view('edit-profil', ['title' => 'Edit Profile']);
+});
+
+Route::get('/repository', function () {
+    return view('repository.index', ['title' => 'Document Repository']);
+});
+
+Route::get('/repository/{document}', function () {
+    return view('repository.show', ['title' => 'Submit Document']);
+});
+
+Route::get('/dashboard', function () {
+    return view('dashboard.index', ['title' => 'Dashboard']);
+});
+
+Route::middleware('auth')->group(function () {
+    Route::get('/dashboard', function () {
+        return view('repository.index', ['title' => 'index']);
+    });
+
+    Route::post('/repository/{create}', function () {
+        return view('repository.create', ['title' => 'Manage Posts']);
+    });
+    Route::put('/repository/{document}/edit', function () {
+        return view('repository.edit', ['title' => 'Edit Post']);
+    });
+    Route::delete('/repository/{document}', function () {
+        return view('repository.index', ['title' => 'index']);
+    });
+});
+Route::get('/dashboard/categories', function () {
+    return view('dashboard.categories.index', ['title' => 'Manage Categories']);
 });
