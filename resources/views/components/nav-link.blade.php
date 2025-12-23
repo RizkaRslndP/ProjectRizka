@@ -4,13 +4,13 @@
 ])
 
 @php
-    $base = 'font-medium rounded-md transition ';
+    $base = 'font-medium rounded-md transition';
 
-    $desktop = 'px-4 py-3 text-4';
-    $mobileClass = 'block px-3 py-auto text-base';
+    $desktop = 'px-3 py-2 text-4';
+    $mobileClass = 'block px-3 py-2 text-base';
 
-    $activeClass = 'bg-gray-400 text-white';
-    $inactiveClass = 'text-gray-700 hover:bg-white/25 hover:text-black';
+    $activeClass = 'bg-white/25 text-white';
+    $inactiveClass = 'text-white hover:bg-white/25 hover:text-white';
 
     $classes = implode(' ', [$base, $mobile ? $mobileClass : $desktop, $active ? $activeClass : $inactiveClass]);
 @endphp
